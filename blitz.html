@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blixe Media – Best Digital Marketing Agency</title>
+
+    <!-- Google Font for a cleaner vibe -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <!-- ==================== NAV ==================== -->
+    <nav id="navbar">
+        <ul>
+            <li><a href="#home" class="active">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- ============== ANIMATED LOGO ============== -->
+    <header class="logo-container">
+        <div class="logo-letter logo-b">B</div>
+        <div class="logo-letter logo-m">M</div>
+        <div class="logo-text">BLIXE MEDIA</div>
+    </header>
+
+    <!-- ==================== HERO ==================== -->
+    <section id="home" class="hero">
+        <div class="data-points"></div>
+
+        <div class="graph-container">
+            <canvas id="growthGraph"></canvas>
+        </div>
+
+        <p class="hero-tagline">Best Digital Marketing Agency</p>
+        <p class="hero-description">
+            We believe in combining innovation, sustainable digital practices, and
+            exceptional craftsmanship to bring your vision to life through
+            data-driven results.
+        </p>
+
+        <div class="cta-container">
+            <a href="#contact" class="cta-button">Get Started Today</a>
+        </div>
+    </section>
+
+    <!-- =================== ABOUT =================== -->
+    <section id="about" class="about">
+        <div class="fade-in">
+            <h2>About Us</h2>
+            <div class="about-content">
+                <p>
+                    At Blixe Media, we transform data into success stories. We are
+                    your premier digital marketing partner, dedicated to elevating
+                    your brand's online presence with cutting-edge strategies and
+                    innovative solutions that deliver measurable results.
+                </p>
+
+                <div class="values">
+                    <div class="value-card">
+                        <h3>📊 Data-Driven</h3>
+                        <p>Every decision backed by comprehensive analytics.</p>
+                    </div>
+                    <div class="value-card">
+                        <h3>🚀 Innovation</h3>
+                        <p>We stay ahead of digital trends to keep you in front.</p>
+                    </div>
+                    <div class="value-card">
+                        <h3>🌱 Sustainable Growth</h3>
+                        <p>Strategies built for long-term, scalable results.</p>
+                    </div>
+                    <div class="value-card">
+                        <h3>✨ Excellence</h3>
+                        <p>Every campaign crafted with precision and detail.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================== SERVICES ================= -->
+    <section id="services" class="services">
+        <div class="fade-in">
+            <h2>Our Services</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">📊</div>
+                    <h3>Digital Analytics</h3>
+                    <p>Insight-driven data analysis that maximises your ROI.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">🎯</div>
+                    <h3>Targeted Campaigns</h3>
+                    <p>Precision marketing to reach audiences at the right time.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">📈</div>
+                    <h3>Growth Strategy</h3>
+                    <p>Scalable plans that drive sustainable business growth.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">🌐</div>
+                    <h3>Digital Ecosystem</h3>
+                    <p>Holistic presence management across every touchpoint.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- =================== CONTACT ================= -->
+    <section id="contact" class="contact">
+        <div class="fade-in">
+            <h2>Contact Us</h2>
+            <div class="contact-content">
+                <p>
+                    Ready to see your data tell a success story? Let’s transform
+                    your digital presence with measurable results.
+                </p>
+                <div class="contact-info">
+                    <p>📧 <a href="mailto:hello@blixemedia.com">hello@blixemedia.com</a></p>
+                    <p>📞 <a href="tel:+911234567890">+91 12345 67890</a></p>
+                    <p>🌐 <a href="https://www.blixemedia.com" target="_blank">www.blixemedia.com</a></p>
+                </div>
+                <a href="mailto:hello@blixemedia.com" class="cta-button">Start Your Project</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== FOOTER =================== -->
+    <footer>
+        <p>&copy; 2025 Blixe Media — All rights reserved.</p>
+    </footer>
+
+    <!-- ================ SCRIPTS ================ -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="script.js"></script>
+    <script type="module">
+  // Import the functions you need from the SDKs you need
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/11.9.1/firebase-app.js";
+  import { getAnalytics } from "https://www.gstatic.com/firebasejs/11.9.1/firebase-analytics.js";
+  // TODO: Add SDKs for Firebase products that you want to use
+  // https://firebase.google.com/docs/web/setup#available-libraries
+
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  const firebaseConfig = {
+    apiKey: "AIzaSyAKjHe0Q1tfyuvjWLAUwpqdsQ7Yi_0VsHU",
+    authDomain: "blixe-5b72e.firebaseapp.com",
+    projectId: "blixe-5b72e",
+    storageBucket: "blixe-5b72e.firebasestorage.app",
+    messagingSenderId: "811916513695",
+    appId: "1:811916513695:web:b1ff581d21bafd71e62daa",
+    measurementId: "G-NHX6QR4PV4"
+  };
+
+  // Initialize Firebase
+  const app = initializeApp(firebaseConfig);
+  const analytics = getAnalytics(app);
+</script>
+</body>
+</html>
